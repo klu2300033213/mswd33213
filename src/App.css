@@ -1,0 +1,193 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Times, serif, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: right;
+  padding: 10px;
+  background-color: #bc1b1b62;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+
+header img {
+  width: 250px; 
+  height: 400;
+  
+  margin-right: 40px; 
+}
+
+header h1 {
+  margin: 50;
+  font-size: 2.5em; 
+  color: #333;
+}
+
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header img {
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 2.1em;
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+main {
+  flex: 1; 
+}
+
+
+footer {
+  background-color: hwb(210 97% 2%); 
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #f5f0f0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+}
+
+footer h5 {
+  margin: 0;
+}
+
+/* Add this to your CSS file */
+
+
+/* app.css */
+
+table {
+  width: 80%;                 /* Table width */
+  margin: 20px auto;          
+  border-collapse: collapse;  
+  font-family: Arial, sans-serif; 
+}
+
+thead {
+  background-color: #2d2424;  /* Light grey background for header */
+}
+
+th, td {
+  border: 1px solid #dddddd;  /* Light grey border */
+  text-align: left;           /* Align text to the left */
+  padding: 12px;              /* Padding inside cells */
+}
+
+th {
+  font-weight: bold;          /* Bold font for headers */
+  background-color: #eaeaea;  /* Slightly darker background for header */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;  /* Alternate row background color */
+}
+
+tr:hover {
+  background-color: #f1f1f1;  /* Background color on hover */
+}
+
+
+/* app.css */
+
+/* Container for the student cards */
+.student-card {
+  background-color: #fff;             /* White background */
+  border: 1px solid #ddd;             /* Light grey border */
+  border-radius: 8px;                 /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px;                      /* Padding inside the card */
+  margin: 20px auto;                  /* Center card and add margin */
+  width: 80%;                         /* Set width (adjust as needed) */
+  max-width: 400px;                   /* Maximum width */
+  font-family: Arial, sans-serif;     /* Font family */
+}
+
+/* Styling for the headings in the cards */
+.student-card h3 {
+  margin-top: 0;                      /* Remove top margin */
+  color: #333;                        /* Dark grey text color */
+  font-size: 1.2em;                   /* Font size */
+  font-weight: bold;                  /* Bold font weight */
+}
+
+/* Styling for the paragraphs in the cards */
+.student-card p {
+  margin: 5px 0;                      /* Vertical margin between paragraphs */
+  color: #555;                        /* Medium grey text color */
+  font-size: 1em;                     /* Standard font size */
+}
+
+/* Additional styling for the card layout */
+.student-card-container {
+  display: flex;                      /* Flexbox layout */
+  flex-wrap: wrap;                    /* Wrap cards to next line */
+  justify-content: center;            /* Center cards horizontally */
+}
+
+/* app.css */
+
+/* Container for the course list */
+ul {
+  list-style-type: none;             /* Remove default list styling */
+  padding: 0;                        /* Remove default padding */
+  margin: 20px auto;                 /* Center the list and add margin */
+  max-width: 600px;                  /* Maximum width of the list */
+  font-family: Arial, sans-serif;    /* Font family */
+}
+
+/* Individual course items */
+li {
+  background-color: #f9f9f9;         /* Light grey background */
+  border: 1px solid #ddd;            /* Light grey border */
+  border-radius: 8px;                /* Rounded corners */
+  padding: 15px;                     /* Padding inside the item */
+  margin-bottom: 15px;               /* Space between items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Course code and name styling */
+li p:first-child {
+  font-weight: bold;                 /* Bold font for course code */
+  color: #333;                       /* Dark text color */
+  margin-bottom: 5px;                /* Space below course code */
+}
+
+li p {
+  margin: 5px 0;                     /* Margin for each paragraph */
+  color: #555;                       /* Medium grey text color */
+  line-height: 1.5;                  /* Increased line height for readability */
+}
+
+/* Styling for L-T-P-S and Credits */
+li p:nth-child(3) {
+  margin-bottom: 10px;               /* More space below L-T-P-S */
+}
+
+/* Highlight important details */
+li p:nth-child(4) {
+  font-weight: bold;                 /* Bold font for credits */
+  color: #007bff;                    /* Blue text color */
+}
